@@ -159,6 +159,13 @@ it beyond a trusted local network, put it behind an authenticated TLS proxy
 
 Go 1.22 or newer is required.
 
+### Run server
+
+```sh
+go run .
+```
+
+### Build and test
 ```sh
 go build -o ptz-udp-server .
 go test -race ./...
