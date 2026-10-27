@@ -164,6 +164,13 @@ Go 1.22 or newer is required.
 ```sh
 go run .
 ```
+This launches a server on port 8080, and binds to loopback by default.
+If you try to connect to it from a local browser you may get a CORS 
+cross-origin error. To fix that, set the origin for local browser 
+connections:
+```sh
+go run . --origin http://localhost:8080
+```
 
 ### Build and test
 ```sh
